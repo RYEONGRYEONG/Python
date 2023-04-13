@@ -28,5 +28,5 @@ for i in range(number):
         a_list.insert(cusor-1, command[2]) # insert는 중간중간 인덱싱이여서 -1
         cusor += 1
 
-b = ''.join(i for i in a_list)
+b = ''.join(a_list)
 print(b)
