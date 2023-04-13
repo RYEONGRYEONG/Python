@@ -5,16 +5,16 @@
         a_list.pop()
         3                """
 
-#  예시 h e l l o
+import sys
 
-a_list = list(input())
+a_list = list(sys.stdin.readline().rstrip())
 cusor = len(a_list) + 1 # 커서는 문장의 맨 뒤에 위치, 인덱스는 길이보다 -1
 
 
-number = int(input())
+number = int(sys.stdin.readline())
 
 for i in range(number):
-    command = list(input())
+    command = list(sys.stdin.readline())
     if command[0] == 'L' and cusor > 1:
         cusor -= 1
     elif command[0] == 'D' and cusor < len(a_list) + 1:
